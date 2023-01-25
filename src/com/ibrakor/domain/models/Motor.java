@@ -8,7 +8,7 @@ public class Motor implements Accesorios{
     private Integer unidades;
 
     @Override
-    public Integer getCodigo() {
+    public String getCodigo() {
         return null;
     }
 

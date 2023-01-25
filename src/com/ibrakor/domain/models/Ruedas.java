@@ -26,7 +26,7 @@ public class Ruedas implements Accesorios{
     }
 
     @Override
-    public Integer getCodigo() {
+    public String getCodigo() {
         return null;
     }
 
