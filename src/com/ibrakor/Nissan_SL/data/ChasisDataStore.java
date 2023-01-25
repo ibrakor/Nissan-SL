@@ -1,7 +1,6 @@
-package com.ibrakor.data;
+package com.ibrakor.Nissan_SL.data;
 
-import com.ibrakor.domain.models.Accesorios;
-import com.ibrakor.domain.models.Chasis;
+import com.ibrakor.Nissan_SL.domain.models.Chasis;
 
 import java.util.Map;
 import java.util.TreeMap;

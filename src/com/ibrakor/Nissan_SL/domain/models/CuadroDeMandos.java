@@ -1,4 +1,4 @@
-package com.ibrakor.domain.models;
+package com.ibrakor.Nissan_SL.domain.models;
 
 public class CuadroDeMandos implements Accesorios {
     private Integer codigo;
