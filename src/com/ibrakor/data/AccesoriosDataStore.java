@@ -20,4 +20,11 @@ public class AccesoriosDataStore {
     }
     //Borrar
     public void delete(String codigo){dataStore.remove(codigo);}
+
+    public static AccesoriosDataStore getInstance(){
+        if (instance == null){
+            instance = new AccesoriosDataStore();
+        }
+        return instance;
+    }
 }
