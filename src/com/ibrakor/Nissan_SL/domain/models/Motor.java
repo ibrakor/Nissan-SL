@@ -1,7 +1,7 @@
 package com.ibrakor.Nissan_SL.domain.models;
 
 public class Motor implements Accesorios{
-    private Integer codigo;
+    private String codigo;
     private String modelo;
     private Integer cilindrada;
     private Integer caballos;

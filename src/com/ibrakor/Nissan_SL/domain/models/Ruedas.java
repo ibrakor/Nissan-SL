@@ -2,12 +2,29 @@ package com.ibrakor.Nissan_SL.domain.models;
 
 public class Ruedas implements Accesorios{
 
-    private Integer codigo;
+    private String codigo;
     private String modelo;
     private String marca;
     private Integer diametro;
     private Integer unidades;
 
+    @Override
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
+
+    @Override
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
 
     public String getMarca() {
         return marca;
@@ -26,17 +43,11 @@ public class Ruedas implements Accesorios{
     }
 
     @Override
-    public String getCodigo() {
-        return null;
-    }
-
-    @Override
-    public String getModelo() {
-        return null;
-    }
-
-    @Override
     public Integer getUnidades() {
-        return null;
+        return unidades;
+    }
+
+    public void setUnidades(Integer unidades) {
+        this.unidades = unidades;
     }
 }
