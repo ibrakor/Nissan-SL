@@ -28,7 +28,7 @@ public class Main {
         ruedas2.setMarca("Firestone");
         ruedas2.setModelo("WinterHawk");
         ruedas2.setDiametro(205);
-        ruedas2.setUnidades(5);
+        ruedas2.setUnidades(3);
 
         crearAccesorioUseCase.execute(ruedas2);
 
@@ -37,7 +37,7 @@ public class Main {
         motor1.setModelo("X6000");
         motor1.setCilindrada(2.0);
         motor1.setCaballos(120);
-        motor1.setUnidades(5);
+        motor1.setUnidades(2);
 
         crearAccesorioUseCase.execute(motor1);
 
@@ -46,21 +46,21 @@ public class Main {
         motor2.setModelo("x9000");
         motor2.setCilindrada(2.4);
         motor2.setCaballos(160);
-        motor2.setUnidades(5);
+        motor2.setUnidades(2);
 
         crearAccesorioUseCase.execute(motor2);
 
         CuadroDeMandos cuadro1 = new CuadroDeMandos();
         cuadro1.setCodigo("1");
         cuadro1.setModelo("LM2000");
-        cuadro1.setUnidades(5);
+        cuadro1.setUnidades(4);
 
         crearAccesorioUseCase.execute(cuadro1);
 
         CuadroDeMandos cuadro2 = new CuadroDeMandos();
         cuadro2.setCodigo("2");
         cuadro2.setModelo("LM6000");
-        cuadro2.setUnidades(5);
+        cuadro2.setUnidades(2);
 
         crearAccesorioUseCase.execute(cuadro2);
 
