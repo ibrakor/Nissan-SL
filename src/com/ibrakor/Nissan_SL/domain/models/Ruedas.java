@@ -1,6 +1,6 @@
 package com.ibrakor.Nissan_SL.domain.models;
 
-public class Ruedas implements Accesorios{
+public class Ruedas implements Accesorios {
 
     private String codigo;
     private String modelo;
@@ -49,5 +49,9 @@ public class Ruedas implements Accesorios{
 
     public void setUnidades(Integer unidades) {
         this.unidades = unidades;
+    }
+
+    public void restarUnaUnidadRueda(Ruedas ruedas) {
+        ruedas.setUnidades(ruedas.getUnidades() - 1);
     }
 }

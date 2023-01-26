@@ -69,6 +69,7 @@ public class Main {
         chasisA.setModeloChasis("OVa900");
         chasisA.setMarcaChasis("Mercedes");
         chasisA.setAccesorios(ruedas1);
+        ruedas1.restarUnaUnidadRueda(ruedas1);
         chasisA.setAccesorios(motor2);
         chasisA.setAccesorios(cuadro1);
 
@@ -132,5 +133,7 @@ public class Main {
         System.out.println("Ruedas: "+ruedas1.getModelo());
         System.out.println("Motor: "+motor1.getModelo());
         System.out.println("Cuadro de Mandos: "+cuadro2.getModelo());
+
+        System.out.println(ruedas1.getUnidades());
     }
 }
