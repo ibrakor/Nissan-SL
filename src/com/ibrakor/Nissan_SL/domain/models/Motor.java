@@ -49,4 +49,8 @@ public class Motor implements Accesorios{
     public void setUnidades(Integer unidades) {
         this.unidades = unidades;
     }
+    public void restarUnaUnidad(Motor motor) {
+        motor.setUnidades(motor.getUnidades() - 1);
+    }
+
 }

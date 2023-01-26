@@ -51,7 +51,7 @@ public class Ruedas implements Accesorios {
         this.unidades = unidades;
     }
 
-    public void restarUnaUnidadRueda(Ruedas ruedas) {
+    public void restarUnaUnidad(Ruedas ruedas) {
         ruedas.setUnidades(ruedas.getUnidades() - 1);
     }
 }

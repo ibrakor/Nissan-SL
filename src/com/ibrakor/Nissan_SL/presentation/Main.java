@@ -69,9 +69,11 @@ public class Main {
         chasisA.setModeloChasis("OVa900");
         chasisA.setMarcaChasis("Mercedes");
         chasisA.setAccesorios(ruedas1);
-        ruedas1.restarUnaUnidadRueda(ruedas1);
+        ruedas1.restarUnaUnidad(ruedas1);
         chasisA.setAccesorios(motor2);
+        motor2.restarUnaUnidad(motor2);
         chasisA.setAccesorios(cuadro1);
+        cuadro1.restarUnaUnidad(cuadro1);
 
         CrearChasisUseCase crearChasisUseCase = new CrearChasisUseCase();
         ObtenerChasisUseCase obtenerChasisUseCase = new ObtenerChasisUseCase();
@@ -82,8 +84,11 @@ public class Main {
         chasisB.setModeloChasis("LaFerrari");
         chasisB.setMarcaChasis("Ferrari");
         chasisB.setAccesorios(ruedas2);
+        ruedas2.restarUnaUnidad(ruedas2);
         chasisB.setAccesorios(motor2);
+        motor2.restarUnaUnidad(motor2);
         chasisB.setAccesorios(cuadro2);
+        cuadro2.restarUnaUnidad(cuadro2);
 
         crearChasisUseCase.execute(chasisB);
 
@@ -92,8 +97,11 @@ public class Main {
         chasisC.setModeloChasis("MC205");
         chasisC.setMarcaChasis("McLaren");
         chasisC.setAccesorios(ruedas1);
+        ruedas1.restarUnaUnidad(ruedas1);
         chasisC.setAccesorios(motor1);
+        motor1.restarUnaUnidad(motor1);
         chasisC.setAccesorios(cuadro1);
+        cuadro1.restarUnaUnidad(cuadro1);
 
         crearChasisUseCase.execute(chasisC);
 
@@ -102,8 +110,11 @@ public class Main {
         chasisD.setModeloChasis("811FF");
         chasisD.setMarcaChasis("Audi");
         chasisD.setAccesorios(ruedas1);
+        ruedas1.restarUnaUnidad(ruedas1);
         chasisD.setAccesorios(motor1);
+        motor1.restarUnaUnidad(motor1);
         chasisD.setAccesorios(cuadro2);
+        cuadro2.restarUnaUnidad(cuadro2);
 
         crearChasisUseCase.execute(chasisD);
 
@@ -134,6 +145,21 @@ public class Main {
         System.out.println("Motor: "+motor1.getModelo());
         System.out.println("Cuadro de Mandos: "+cuadro2.getModelo());
 
-        System.out.println(ruedas1.getUnidades());
+        System.out.println("----------------------");
+        System.out.println("Ruedas");
+        System.out.println(ruedas1.getModelo()+": "+ruedas1.getUnidades()+" unidades disponibles");
+        System.out.println(ruedas2.getModelo()+": "+ruedas2.getUnidades()+" unidades disponibles");
+
+        System.out.println("Motores");
+
+        System.out.println(motor1.getModelo()+": "+motor1.getUnidades()+" unidades disponibles");
+        System.out.println(motor2.getModelo()+": "+motor2.getUnidades()+" unidades disponibles");
+
+        System.out.println("Cuadro de Mandos");
+
+        System.out.println(cuadro1.getModelo()+": "+cuadro1.getUnidades()+" unidades disponibles");
+        System.out.println(cuadro2.getModelo()+": "+cuadro2.getUnidades()+" unidades disponibles");
+
+
     }
 }

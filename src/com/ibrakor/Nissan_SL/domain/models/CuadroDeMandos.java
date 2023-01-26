@@ -31,4 +31,8 @@ public class CuadroDeMandos implements Accesorios {
     public void setUnidades(Integer unidades) {
         this.unidades = unidades;
     }
+    public void restarUnaUnidad(CuadroDeMandos cuadroDeMandos) {
+        cuadroDeMandos.setUnidades(cuadroDeMandos.getUnidades() - 1);
+    }
+
 }
