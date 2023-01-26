@@ -3,20 +3,33 @@ package com.ibrakor.Nissan_SL.domain.models;
 public class Motor implements Accesorios{
     private String codigo;
     private String modelo;
-    private Integer cilindrada;
+    private Double cilindrada;
     private Integer caballos;
     private Integer unidades;
 
     @Override
     public String getCodigo() {
-        return null;
+        return codigo;
     }
 
-    public Integer getCilindrada() {
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
+
+    @Override
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public Double getCilindrada() {
         return cilindrada;
     }
 
-    public void setCilindrada(Integer cilindrada) {
+    public void setCilindrada(Double cilindrada) {
         this.cilindrada = cilindrada;
     }
 
@@ -29,12 +42,11 @@ public class Motor implements Accesorios{
     }
 
     @Override
-    public String getModelo() {
-        return null;
+    public Integer getUnidades() {
+        return unidades;
     }
 
-    @Override
-    public Integer getUnidades() {
-        return null;
+    public void setUnidades(Integer unidades) {
+        this.unidades = unidades;
     }
 }
